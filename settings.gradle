@@ -1,0 +1,3 @@
+
+rootProject.name = "Flight_Mode"
+include ':app'

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "248837835905",
+    "project_id": "flightmode-c30bc",
+    "storage_bucket": "flightmode-c30bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248837835905:android:2e718d927eb477c0b4d180",
+        "android_client_info": {
+          "package_name": "com.example.flight_mode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248837835905-u8q2ifgp4jm57pd73lvfrv21s4hfl3u6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTcot7vDdI4CGaqBA9ikhTKXihLltTOOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248837835905-u8q2ifgp4jm57pd73lvfrv21s4hfl3u6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
