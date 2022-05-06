@@ -3,7 +3,6 @@ package com.example.flight_mode;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 
 public class SplashActivity extends AppCompatActivity {
@@ -22,7 +21,6 @@ public class SplashActivity extends AppCompatActivity {
                     }
                 }
                 catch (InterruptedException ex) { }
-                SharedPreferences sp=getSharedPreferences("login",0);
                 Intent intent=new Intent();
                 intent.setClass(SplashActivity.this, LoginActivity.class);
                 startActivity(intent);

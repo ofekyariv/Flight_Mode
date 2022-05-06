@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ExploreActivity extends AppCompatActivity implements View.OnClickListener {
-    ImageView flag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

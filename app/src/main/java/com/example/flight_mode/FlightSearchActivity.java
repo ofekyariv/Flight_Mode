@@ -111,12 +111,6 @@ public class FlightSearchActivity extends AppCompatActivity implements AdapterVi
             startActivity(browserIntent);
         }
     }
-    private void newFlight(Flight flight) {
-        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        firebaseAuth = FirebaseAuth.getInstance();
-        DatabaseReference db = firebaseDatabase.getReference("Users/" + firebaseAuth.getUid() + "/Flights").push();
-        db.setValue(flight);
-    }
     private void checkIfFlightExists(Flight flight){
         FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
         DatabaseReference tripsDB = firebaseDatabase.getReference("Users/"+firebaseAuth.getUid()+"/Flights");
@@ -151,5 +145,11 @@ public class FlightSearchActivity extends AppCompatActivity implements AdapterVi
             public void onCancelled(@NonNull DatabaseError error) {
             }
         });
+    }
+    private void newFlight(Flight flight) {
+        FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseAuth = FirebaseAuth.getInstance();
+        DatabaseReference db = firebaseDatabase.getReference("Users/" + firebaseAuth.getUid() + "/Flights").push();
+        db.setValue(flight);
     }
 }

@@ -36,7 +36,7 @@ public class FlightListActivity extends AppCompatActivity implements AdapterView
 
         lvFlights = findViewById(R.id.lvFlights);
         progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Login Please Wait...");
+        progressDialog.setMessage("Loadin Please Wait...");
         progressDialog.show();
         FirebaseDatabase firebaseDatabase=FirebaseDatabase.getInstance();
         firebaseAuth= FirebaseAuth.getInstance();
